@@ -4,30 +4,33 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 245, 245, 220; /* Light beige */
+  --background-mid-rgb: 250, 250, 230;  /* Mid-beige */
+  --background-end-rgb: 255, 255, 240;  /* Cream */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 33, 33, 33; /* Dark gray */
+    --background-mid-rgb: 44, 44, 44;   /* Mid-dark gray */
+    --background-end-rgb: 66, 66, 66;   /* Lighter dark gray */
   }
 }
-html,
-body, #__next {
+
+html, body, #__next {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-    height: 100%;
-    margin: 0;
-    overflow: hidden;
+    to bottom,
+    rgba(var(--background-start-rgb), 1),
+    rgba(var(--background-mid-rgb), 1),
+    rgba(var(--background-end-rgb), 1)
+  );
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
 }
+
 canvas {
   display: block;
 }
