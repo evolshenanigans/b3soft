@@ -146,9 +146,7 @@ export const Overlay: React.FC = () => {
                             <FaCube className="text-2xl" />
                             <span>Spline</span>
                         </div>
-                        <h2 className="font-bold text-lg">
-                            Machine Learning
-                        </h2>
+                        <h2 className="font-bold text-lg">Machine Learning</h2>
                         <div className="flex items-center space-x-2 mb-2">
                             <SiPytorch className="text-2xl" />
                             <span>Pytorch</span>
@@ -171,6 +169,14 @@ export const Overlay: React.FC = () => {
                     <p className="text-gray-500">
                         I'm very friendly, I promise
                     </p>
+                    <p>
+                        This is a work in progress. Keep returning for future
+                        features such as:
+                    </p>
+                    <ul className="list-disc pl-4">
+                        <li>Day in my life</li>
+                        <li>Projects I'm currently working on</li>
+                    </ul>
                     <div className="mt-6 p-3 bg-slate-200 rounded-lg">
                         <a
                             href="https://www.linkedin.com/in/gjgutierrez/"
