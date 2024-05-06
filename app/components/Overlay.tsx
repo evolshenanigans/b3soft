@@ -72,7 +72,7 @@ export const Overlay: React.FC = () => {
             <div className="w-screen">
                 <Section opacity={opacityFirstSection}>
                     <h1 className="font-semibold font-serif text-2xl">
-                        Hello, I'm Josh
+                        Hello, I&apos;m Josh
                     </h1>
                     <p className="text-gray-500">Welcome to my portfolio</p>
                     <p className="mt-3">I know:</p>
@@ -164,10 +164,10 @@ export const Overlay: React.FC = () => {
                 </Section>
                 <Section opacity={opacityLastSection}>
                     <h1 className="font-semibold font-serif text-2xl">
-                        Let's connect?
+                        Let&apos;s connect?
                     </h1>
                     <p className="text-gray-500">
-                        I'm very friendly, I promise
+                        I&apos;m very friendly, I promise
                     </p>
                     <p>
                         This is a work in progress. Keep returning for future
@@ -175,7 +175,7 @@ export const Overlay: React.FC = () => {
                     </p>
                     <ul className="list-disc pl-4">
                         <li>Day in my life</li>
-                        <li>Projects I'm currently working on</li>
+                        <li>Projects I&apos;m currently working on</li>
                     </ul>
                     <div className="mt-6 p-3 bg-slate-200 rounded-lg">
                         <a
