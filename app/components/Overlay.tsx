@@ -1,9 +1,28 @@
 import { Scroll, useScroll } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { useState } from "react";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import {
+    FaReact,
+    FaNodeJs,
+    FaLinkedin,
+    FaPython,
+    FaGem,
+    FaGithub,
+    FaCube,
+    FaCode,
+    FaBookReader,
+    FaTruck,
+} from "react-icons/fa";
+import {
+    SiJavascript,
+    SiTypescript,
+    SiPostgresql,
+    SiBlender,
+    SiPytorch,
+    SiPandas,
+    SiNumpy,
+} from "react-icons/si";
 
-// Define types for the props of the Section component
 type SectionProps = {
     right?: boolean;
     opacity: number;
@@ -28,7 +47,6 @@ const Section: React.FC<SectionProps> = ({
                 <div className="max-w-sm w-full">
                     <div className="bg-gray-200 rounded-lg px-8 py-12 text-gray-800">
                         {" "}
-                        {/* Adjusted the background and text colors */}
                         {children}
                     </div>
                 </div>
@@ -59,9 +77,18 @@ export const Overlay: React.FC = () => {
                     <p className="text-gray-500">Welcome to my portfolio</p>
                     <p className="mt-3">I know:</p>
                     <ul className="leading-9">
-                        <li> How to code</li>
-                        <li> How to learn</li>
-                        <li> How to deliver</li>
+                        <div className="flex items-center space-x-2 mb-2">
+                            <FaCode className="text-2xl" />
+                            <span>How to code</span>
+                        </div>
+                        <div className="flex items-center space-x-2 mb-2">
+                            <FaBookReader className="text-2xl" />
+                            <span>How to learn</span>
+                        </div>
+                        <div className="flex items-center space-x-2 mb-2">
+                            <FaTruck className="text-2xl" />
+                            <span>How to deliver</span>
+                        </div>
                     </ul>
                     <p className="animate-bounce mt-6">↓ scroll down</p>
                 </Section>
@@ -72,24 +99,69 @@ export const Overlay: React.FC = () => {
                     <p className="text-gray-500">
                         PS: I am always learning come back for more
                     </p>
-                    <p className="mt-3">
-                        <b>Frontend</b>
-                    </p>
-                    <ul className="leading-9">
-                        <li>ReactJS</li>
-                        <li>React Native</li>
-                        <li>NextJS</li>
-                        <li>Tailwind</li>
-                    </ul>
-                    <p className="mt-3">
-                        <b>Backend</b>
-                    </p>
-                    <ul className="leading-9">
-                        <li>NodeJS</li>
-                        <li>Python</li>
-                        <li>Ruby</li>
-                        <li>PostgreSQL</li>
-                    </ul>
+                    <div>
+                        <h2 className="font-bold text-lg">
+                            Front-End Technologies
+                        </h2>
+                        <div className="flex items-center space-x-2 mb-2">
+                            <FaReact className="text-2xl" />
+                            <span>React</span>
+                        </div>
+                        <div className="flex items-center space-x-2 mb-2">
+                            <SiJavascript className="text-2xl" />
+                            <span>JavaScript (ES6+)</span>
+                        </div>
+                        <div className="flex items-center space-x-2 mb-2">
+                            <SiTypescript className="text-2xl" />
+                            <span>TypeScript</span>
+                        </div>
+
+                        <h2 className="font-bold text-lg mt-4">
+                            Back-End Technologies
+                        </h2>
+                        <div className="flex items-center space-x-2 mb-2">
+                            <FaNodeJs className="text-2xl" />
+                            <span>Node.js</span>
+                        </div>
+                        <div className="flex items-center space-x-2 mb-2">
+                            <SiPostgresql className="text-2xl" />
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div className="flex items-center space-x-2 mb-2">
+                            <FaPython className="text-2xl" />
+                            <span>Python</span>
+                        </div>
+                        <div className="flex items-center space-x-2 mb-2">
+                            <FaGem className="text-2xl" />
+                            <span>Ruby</span>
+                        </div>
+                        <h2 className="font-bold text-lg">
+                            Design Technologies
+                        </h2>
+                        <div className="flex items-center space-x-2 mb-2">
+                            <SiBlender className="text-2xl" />
+                            <span>Blender</span>
+                        </div>
+                        <div className="flex items-center space-x-2 mb-2">
+                            <FaCube className="text-2xl" />
+                            <span>Spline</span>
+                        </div>
+                        <h2 className="font-bold text-lg">
+                            Machine Learning
+                        </h2>
+                        <div className="flex items-center space-x-2 mb-2">
+                            <SiPytorch className="text-2xl" />
+                            <span>Pytorch</span>
+                        </div>
+                        <div className="flex items-center space-x-2 mb-2">
+                            <SiPandas className="text-2xl" />
+                            <span>Pandas</span>
+                        </div>
+                        <div className="flex items-center space-x-2 mb-2">
+                            <SiNumpy className="text-2xl" />
+                            <span>NumPy</span>
+                        </div>
+                    </div>
                     <p className="animate-bounce mt-6">↓ keep scrolling</p>
                 </Section>
                 <Section opacity={opacityLastSection}>
